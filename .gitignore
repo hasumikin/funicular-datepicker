@@ -1,1 +1,13 @@
-/node_modules
+*.gem
+*.so
+*.bundle
+*.o
+*.log
+lib/string_bits/string_bits.so
+lib/string_bits/string_bits.bundle
+ext/string_bits/Makefile
+ext/string_bits/*.o
+pkg/
+.bundle/
+tmp/
+node_modules/

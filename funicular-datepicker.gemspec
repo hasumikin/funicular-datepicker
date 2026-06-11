@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Date picker component for Funicular"
   spec.description = "A Funicular date picker component packaged as a Ruby-script CRubygem."
+  spec.homepage = "https://github.com/hasumikin/funicular-datepicker"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"
 
