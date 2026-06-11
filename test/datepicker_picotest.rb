@@ -67,6 +67,14 @@ class DatePickerComponentTest < Funicular::Testing::DOMTest
     assert_equal_value "Birthday", attribute(".birthday-input", "placeholder")
   end
 
+  def test_renders_custom_button_class
+    mount Funicular::Plugins::DatePicker::Component,
+          value: "2000-01-02",
+          button_class: "birthday-calendar-button"
+
+    assert_selector ".birthday-calendar-button"
+  end
+
   def test_input_calls_on_change
     changed = nil
     component = mount Funicular::Plugins::DatePicker::Component,

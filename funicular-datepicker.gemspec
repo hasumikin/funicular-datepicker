@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "funicular-datepicker"
-  spec.version = "0.1.0"
+  spec.version = "0.1.1"
   spec.authors = ["HASUMI Hitoshi"]
   spec.email = ["hasumikin@gmail.com"]
 

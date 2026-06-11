@@ -71,7 +71,7 @@ class DatePickerComponent < Funicular::Component
           oninput: :handle_input,
           onfocus: -> { open_calendar }
         )
-        button(type: "button", class: "funicular-date-picker__button", onclick: -> { open_calendar }) { "Calendar" }
+        button(type: "button", class: button_class, onclick: -> { open_calendar }) { "Calendar" }
       end
 
       render_calendar if state.calendar_open
@@ -79,6 +79,10 @@ class DatePickerComponent < Funicular::Component
   end
 
   private
+
+  def button_class
+    props[:button_class] || "funicular-date-picker__button"
+  end
 
   def render_calendar
     div(class: "funicular-date-picker__panel") do
